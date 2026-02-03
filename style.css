@@ -1,0 +1,107 @@
+/* 🌸 PAGE BASE */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #ffe6f0; /* soft baby pink */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+/* 🌷 HEADINGS */
+h1, h2 {
+  color: #ff5fa2;
+  margin-bottom: 15px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+/* 💌 TEXT */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 25px;
+  animation: fadeIn 1.4s ease-in;
+}
+
+/* 🎀 BUTTON AREA */
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  animation: fadeIn 1.6s ease-in;
+}
+
+/* 💖 BUTTONS */
+button {
+  padding: 14px 32px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff8fcf, #ff5fa2);
+  color: white;
+  box-shadow: 0 6px 15px rgba(255, 95, 162, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 22px rgba(255, 95, 162, 0.6);
+}
+
+/* 🐱 EMOJI STICKERS NEAR BUTTON */
+.cat {
+  font-size: 26px;
+}
+
+/* 🌸 FADE ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🐾 FLOATING CATS & FLOWERS */
+.stickers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.sticker {
+  position: absolute;
+  bottom: -10%;
+  font-size: 26px;
+  opacity: 0.8;
+  animation: floatUp 7s linear infinite;
+}
+
+/* different positions */
+.sticker:nth-child(1) { left: 10%; animation-delay: 0s; }
+.sticker:nth-child(2) { left: 30%; animation-delay: 2s; }
+.sticker:nth-child(3) { left: 50%; animation-delay: 4s; }
+.sticker:nth-child(4) { left: 70%; animation-delay: 1s; }
+.sticker:nth-child(5) { left: 90%; animation-delay: 3s; }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+  }
+}

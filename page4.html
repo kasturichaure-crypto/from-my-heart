@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slide 4</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Little things I want to tell you 🌸</h2>
+
+<button onclick="showOne()">💌 1</button>
+<button onclick="showTwo()">💌 2</button>
+<button onclick="showThree()">💌 3</button>
+
+<p id="one" class="hidden">I messed up and I’m really sorry for that 😞</p>
+<p id="two" class="hidden">I promise I will be better for you 🤍</p>
+<p id="three" class="hidden">Please forgive me… you mean so much to me 💖</p>
+
+<br><br>
+
+<a href="message.html">
+  <button>My message 💕</button>
+</a>
+
+<script>
+  function showOne() {
+    document.getElementById("one").style.display = "block";
+  }
+  function showTwo() {
+    document.getElementById("two").style.display = "block";
+  }
+  function showThree() {
+    document.getElementById("three").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
+<div class="stickers">
+  <span class="sticker">🐱</span>
+  <span class="sticker">🌸</span>
+  <span class="sticker">🐾</span>
+  <span class="sticker">🌷</span>
+  <span class="sticker">🎀</span>
+</div>
